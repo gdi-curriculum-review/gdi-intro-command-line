@@ -1,412 +1,836 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>girldevelopit-reveal.js - The GDI HTML Presentation Framework</title>
+    <title>Intro to Command Line</title>
 
-		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
-		<meta name="author" content="Girl Develop It">
+    <meta name="description" content="Girl Develop It official Intro to Command Line curriculum">
+    <meta name="author" content="Girl Develop It">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/gdilight.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		
-		<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+    <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
 
-		<!-- If use the PDF print sheet so students can print slides-->
-		
-		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
         <!-- Opening -->
-				<section>
-					<h1>GDI Reveal.js</h1>
-                    <!-- <img src="img/circle-gdi-logo.png" alt="GDI Logo"/> -->
-					<h3>Girl Develop It's Framework for HTML Presentations</h3>
-					<p>
-						<small>Found at <a href ="http://github.com/girldevelopit/reveal.js">Girl Develop It reveal.js fork</a>.</small>
-					</p>
-					<p>
-						<small>Original Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-        <!-- Compatibility-->
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.</p>
-						
-						<p>We highly recommend using Chrome, currently, however, the latest version of Safari, mobile Safari (iPad), Firefox and IE9 will work.
-					</p>
-				</section>
-				
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-				
-				<!-- Examples of basic html based slides -->
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-                
-                <section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-                    <p>P.S. This won't work when running the slides locally unless you run reveal.js runs from a local web server.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-				
-				<!-- Examples of code slides-->
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>For HTML -- Surround your code with a div class "xml", then pre, then code.</p>
-           <pre>
-            <code>
-              &lt;ul>
-                &lt;li>No order here&lt;/li>
-                &lt;li>Or here&lt;/li>
-                &lt;li>Or here&lt;/li>
-                &lt;li>Or here&lt;/li>
-              &lt;/ul&gt;
-            </code>
-          </pre>
-				</section>
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>We can also make code editable</p>
-					  <pre>
-					    <code contenteditable>
-                &lt;ul>
-                  &lt;li>No order here&lt;/li>
-                  &lt;li>Or here&lt;/li>
-                  &lt;li>Or here&lt;/li>
-                  &lt;li>Or here&lt;/li>
-                &lt;/ul&gt;
-              </code>
-
-            </pre>
-				</section>
-				
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>CSS</p>
-					  <pre>
-              <code contenteditable class ="css">
-                body{
-                  background-color: #ffffff;
-                }
-              </code>
-            </pre>
-				</section>
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>Javascript</p>
-					  <pre>
-              <code contenteditable class ="javascript">
-                function helloWorld(){
-                  var name = 'GDI';
-                  alert("Hi, " + name)
-                }
-              </code>
-            </pre>
-				</section>
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>PHP</p>
-					  <pre>
-              <code contenteditable class ="php">
-                function helloWorld(){
-                  $name = 'GDI';
-                  echo "Hi, " . $name;
-                }
-              </code>
-            </pre>
-				</section>
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>Ruby</p>
-					  <pre>
-              <code contenteditable class ="ruby">
-                def hello_world
-                  @name = 'GDI'
-                  puts "Hi, #{@name}"
-                end
-              </code>
-            </pre>
-				</section>
-               
-         <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Python</p>
- 					  <pre>
-               <code contenteditable class ="python">
-                 def hello_world():
-                   name = "GDI"
-                   print 'Hi, ' + name
-                   return
-               </code>
-             </pre>
- 				</section>
- 				
- 				 <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Java</p>
- 					  <pre>
-               <code contenteditable class ="java">
-                public void helloWorld(){
-                  String name = "GDI";
-                  System.out.println("Hi," + name)
-                }
-               </code>
-             </pre>
- 				</section>
-        
-
-        <!-- Elements entering one at a time-->
         <section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+          <h2>Intro to Command Line</h2>
+          <img src="img/circle-gdi-logo.png" alt="GDI Logo"/>
+          <!-- Link to where your slides are hosted here.
+          <p>
+            <small>Found at <a href ="http://<username>.github.io/<repositoryname>"></a>http://username.github.io/repositoryname</small>
+          </p>
+          -->
+        </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#/14/1">down</a>.
-						</p>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-						<a href="#/14/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-  						<a href="#/14" class="image">
-  							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<a href="#/14/3" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-  						<a href="#/14/1" class="image">
-  							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+        <section>
+          <h2>Welcome!</h2>
+          <div>
+            <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+          </div>
+            <br>
+            <h4>Some "rules"</h4>
+            <ul>
+              <li>We are here for you!</li>
+              <li>Every question is important</li>
+              <li>Help each other</li>
+              <li>Have fun</li>
+            </ul>
+        </section>
 
-        
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        <section>
+          <h2>Welcome!</h2>
+            <br>
+            <h4>Tell us about yourself.</h4>
+            <ul>
+              <li>Who are you?</li>
+              <li>What do you hope to get out of the class?</li>
+              <!-- Feel free to change the icebreaker question! -->
+              <li>Why do you live in this area?</li>
+            </ul>
+        </section>
 
-				<section>
-					<h2>rvl.io</h2>
-					<p>
-						You know, we are nerds after all and will probably get a kick out of all of this HTML. BUT, if you really don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-            <a href="?theme=gdicool#/themes">GDI Cool</a> -
-            <a href="?theme=gdilight#/themes">GDI Light</a> -
-            <a href="?theme=gdisunny#/themes">GDI Sunny</a> -
-            <a href="?theme=gdidefault#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
+        <section>
+          <h2>Agenda</h2>
+          <h6>This class will be a combo of lecture + exercises</h6>
+          <ul>
+            <li class="fragment">Introductions</li>
+            <li class="fragment">Command line "lingo"</li>
+            <li class="fragment">Working with folder directories</li>
+            <li class="fragment">Working with files</li>
+            <li class="fragment">Standard input/output</li>
+            <li class="fragment">Working with commands</li>
+            <li class="fragment">Running and stopping processes</li>
+            <li class="fragment">Real world examples</li>
+          </ul>
+        </section>
 
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/1">like this</a>.
-					</p>
-				</section>
+        <section>
+          <h2>The "lingo"</h2>
+          <ul>
+            <li class="fragment">"Terminal"</li>
+            <li class="fragment">"Command-line"</li>
+            <li class="fragment">"Command prompt"</li>
+            <li class="fragment">"Shell"</li>
+            <li class="fragment">"Console"</li>
+          </ul>
+          <br><br>
+          <p class="fragment">These are all pretty much the same thing.</p>
+        </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+        <section>
+          <h2>What is a Terminal?</h2>
+          <br>
+          <p>A text-based command interpreter.</p>
+          <br>
+          <p>The most common shell is "bash".</p>
+          <br>
+          <p>For Mac's OSX, use the "Terminal" application.</p>
+        </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Girl Develop It</h3>
-					<h4>Special thanks to: Hakim El Hattab / hakim.se</h4>
-				</section>
+        <section>
+          <h2>Fire it up!</h2>
+          <img src="img/command-line-blank.png" alt="Black Command Line">
+        </section>
 
-			</div>
-  		<footer>
+        <section>
+          <h2>Prompt</h2>
+          <img src="img/command-line-prompt.png" alt="Command Line prompt">
+        </section>
+
+        <section>
+          <h2>Prompt</h2>
+          <br>
+          <p>Usually shows your username and computer name.</p>
+          <br>
+          <p>Indicates that the terminal is ready for a command.</p>
+        </section>
+
+        <section>
+          <h2>Cursor</h2>
+          <img src="img/command-line-cursor.png" alt="Command Line cursor">
+        </section>
+
+        <section>
+          <h2>Cursor</h2>
+          <br>
+          <p>Indicates your current spot in the terminal.</p>
+          <br>
+          <p>Shows you where the stuff you type will go.</p>
+        </section>
+
+        <section>
+          <h2>Your First Command</h2>
+          <br>
+          <ol>
+            <li>Type <code>pwd</code> into your terminal.</li>
+            <li>Press the enter key.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Your First Command</h2>
+          <p><code>pwd</code></p>
+          <img src="img/command-line-pwd.png" alt="Your first command, pwd">
+        </section>
+
+        <section>
+          <h2>clear</h2>
+          <br>
+          <p>The <code>clear</code> command clears the contents of the terminal and issues a prompt.</p>
+          <br>
+          <p>This is good for removing previous output that is unnecessary to the task at hand.</p>
+          <br>
+          <p>Feel free to use this whenever things get too cluttered.</p>
+        </section>
+
+        <section>
+          <h2>Directories</h2>
+          <br>
+          <p>Also referred to as "folders".</p>
+          <br>
+          <p>A container for files or other directories.</p>
+          <br>
+          <p>Nested files and directories can be referenced using <code>paths</code>.</p>
+        </section>
+
+        <section>
+          <h2>Directory Trees</h2>
+          <br>
+          <p>The set of all folders, taken together, makes up your entire file system.</p>
+          <br>
+          <p>This system is organized into a kind of upside down tree.</p>
+        </section>
+
+        <section>
+          <h2>Directory Tress</h2>
+          <p>At the very top of the tree is the root folder.</p>
+          <br>
+          <img src="img/unix-filesystem.png" alt="Unix file directory system">
+        </section>
+
+        <section>
+          <h2>Paths</h2>
+          <br>
+          <p>Each directory or file is separated by a forward slash "/"</p>
+          <br>
+          <p>There are two kinds of paths:</p>
+          <br>
+          <ul>
+            <li>Relative: <code>Desktop/the_project/overview.txt</code></li>
+            <li>Absolute: <code>/Users/jane/Desktop/logo.png</code></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Shortcuts</h2>
+          <br>
+          <ul>
+            <li>Current Directory: <code>.</code></li>
+            <li>Parent Directory: <code>..</code></li>
+            <li>Home Directory: <code>~</code></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>cd</h2>
+          <br>
+          <p>The <code>cd</code> command changes the current working directory.</p>
+          <br>
+          <p>It expects a file path as an "argument".</p>
+          <br>
+          <p>If no file path is given, it assumes your home directory by default.</p>
+        </section>
+
+        <section>
+          <h2>cd</h2>
+          <img src="img/command-line-cd.png" alt="Command line cd">
+        </section>
+
+        <section>
+          <h2>ls</h2>
+          <br>
+          <p>The <code>ls</code> command lists the contents of a directory.</p>
+          <br>
+          <p>It expects a file path as an "argument".</p>
+          <br>
+          <p>If no file path is given, it assumes the current directory by default.</p>
+        </section>
+
+        <section>
+          <h2>ls</h2>
+          <img src="img/command-line-ls.png" alt="Command line ls">
+        </section>
+
+        <section>
+          <h2>Flags</h2>
+          <br>
+          <p>The <code>ls</code> command accepts several option flags.</p>
+          <br>
+          <p>A flag is a special argument that is used to set an option for the command.</p>
+          <br>
+          <p>These are commonly a hyphen followed by a single character (e.g. <code>-g</code>)</p>
+          <br>
+          <p>Setting the <code>-l</code> flag on the <code>ls</code> command causes it to provide more verbose output.</p>
+        </section>
+
+        <section>
+          <h2>ls -l</h2>
+          <img src="img/command-line-ls-flags.png" alt="Command line ls with flags">
+        </section>
+
+        <section>
+          <h2>cd & ls</h2>
+          <br>
+          <p>Play with the <code>cd</code> and <code>ls</code> commands.</p>
+          <br>
+          <h4>Be sure to incorporate:</h4>
+          <ul>
+            <li>relative file path</li>
+            <li>absolute file path</li>
+            <li>the <code>.</code> shortcut</li>
+            <li>the <code>..</code> shortcut</li>
+            <li>the <code>~</code> shortcut</li>
+            <li><code>cd</code> without an argument</li>
+          </ul>
+          <br><br>
+          <p>Use <code>pwd</code> to check your location periodically.</p>
+        </section>
+
+        <section>
+          <h2>Making a Directory</h2>
+          <br>
+          <p>Use the <code>mkdir</code> command to create a new empty directory.</p>
+          <br>
+          <p>Pass the path of the directory name as the first argument.</p>
+          <br>
+          <p class="fragment">If the base of the path doesn't already exist, the command will fail.</p>
+          <br>
+          <p class="fragment">Use the <code>-p</code> flag to create the full path if non-existent.</p>
+        </section>
+
+        <section>
+          <h2>mkdir</h2>
+          <img src="img/command-line-mkdir.png" alt="Command line make directory">
+        </section>
+
+        <section>
+          <h2>Removing Directories</h2>
+          <br>
+          <p>Use the <code>rmdir</code> command to remove an empty directory.</p>
+          <br>
+          <p>Use <code>rm -r</code> to remove a non-empty directory.</p>
+        </section>
+
+        <section>
+          <h2>rmdir</h2>
+          <img src="img/command-line-rmdir.png" alt="Command line remove directory">
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <br>
+          <ol>
+            <li><code>cd</code> to your home directory.</li>
+            <li>Create the <code>girl/develop</code> directory path.</li>
+            <li>Navigate into the <code>girl/develop</code> directory.</li>
+            <li>Create the <code>it</code> directory.</li>
+            <li>Navigate up two directories.</li>
+            <li>Use the <code>pwd</code> command to verify you are home.</li>
+            <li>Remove the <code>girl/develop/it</code> path.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Let's Develop It</h2>
+          <img src="img/exercise1-answer.png" alt="Exercise 1 answer">
+        </section>
+
+        <section>
+          <h2>Files</h2>
+          <br>
+          <p>Use <code>cat</code> to output the contents of a file to the console.</p>
+          <br>
+          <p>Use <code>more</code> to step through the contents of a file one screen at a time.</p>
+          <br>
+          <p>Use <code>less</code> to step backwards or forwards.</p>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <br>
+          <p>Explore the <code>/usr/share/misc</code> files using <code>cat</code>, <code>more</code>, and <code>less</code></p>
+          <br>
+          <p>Can you find your birth month's stone and flower in the <code>birthtoken</code> file?</p>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <img src="img/exercise2-answer.png" alt="Exercise 2 answer">
+        </section>
+
+        <section>
+          <h2>Hidden Files</h2>
+          <br>
+          <p>Filenames that begin with a period are hidden from normal output.</p>
+          <br>
+          <p>e.g. ".bashrc"</p>
+          <br>
+          <p>Use the <code>ls</code> command with the <code>-a</code> flag to see hidden files in addition to the usual output.</p>
+          <br>
+          <p>Type <code>ls -la</code> into your terminal.</p>
+          <br>
+          <p>Use the <code>-h</code> flag to get human readable file sizes.</p>
+        </section>
+
+        <section>
+          <h2>ls -la</h2>
+          <img src="img/command-line-hidden-files.png" alt="Command line hidden files using flag -la">
+        </section>
+
+        <section>
+          <h2>Creating and Removing Files</h2>
+          <br>
+          <p>Use <code>touch</code> to create a blank file or update the timestamp on an existing file.</p>
+          <br>
+          <p>Use <code>rm</code> to remove files.</p>
+        </section>
+
+        <section>
+          <h2>Permissions</h2>
+          <br>
+          <div class="left-align">
+            <p>The unix security model breaks up file permissions into three groups:</p>
+            <br>
+            <ol>
+              <li>Owner</li>
+              <li>Group</li>
+              <li>Others</li>
+            </ol>
+            <br><br>
+            <table>
+              <thead>
+                <tr>
+                  <td>
+                    <h3><code>rwx</code></h3>
+                  </td>
+                  <td>
+                    <h3><code>r-x</code></h3>
+                  </td>
+                  <td>
+                    <h3><code>r-x</code></h3>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    owner
+                  </td>
+                  <td>
+                    group
+                  </td>
+                  <td>
+                    others
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Changing Permissions</h2>
+          <br>
+          <p>Use <code>chmod</code> to change permissions on a file/directory</p>
+          <br>
+          <h4>The argument has three sections:</h4>
+          <ol>
+            <li class="fragment"><code>u</code>, <code>g</code>, <code>o</code> to signify which level to target.</li>
+            <li class="fragment"><code>+</code> or <code>-</code> to indicate whether adding or removing.</li>
+            <li class="fragment"><code>r</code>, <code>w</code>, <code>x</code> to indicate what type of permission to change.</li>
+          </ol>
+          <br><br>
+          <h4 class="fragment">Examples:</h4>
+          <p class="fragment"><code>chmod u+w</code> to add write permissions for the file's owner.</p>
+          <p class="fragment"><code>chmod go-rwx</code> to remove all permissions for the file's group and everyone else.</p>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <br>
+          <ol>
+            <li>Create a new file named <code>testfile</code> in your home directory.</li>
+            <li>Grant yourself execute permission on the file.</li>
+            <li>Remove read permission on <code>testfile</code> from your group and everyone else.</li>
+            <li>Delete <code>testfile</code>.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <img src="img/exercise3-answer.png" alt="Exercise 3 Example">
+        </section>
+
+        <section>
+          <h2>Standard Output</h2>
+          <br>
+          <p>Most commands display their results to a mechanism called the standard output.</p>
+          <br>
+          <p>By default, this directs its content to the display.</p>
+          <br>
+          <p class="fragment">The standard output can be redirected to a file using the <code>></code> operator.</p>
+          <br>
+          <p class="fragment"><code>ls > file_list.txt</code></p>
+        </section>
+
+        <section>
+          <h2>Standard Output</h2>
+          <br>
+          <p>In order to append to the file instead of overwriting it, use the <code>>></code> operator instead.</p>
+          <br>
+          <p><code>ls >> file_list.txt</code></p>
+          <br>
+          <p class="fragment">Both the <code>></code> and <code>>></code> operator will create the file if it doesn't exist.</p>
+        </section>
+
+        <section>
+          <h2>Standard Input</h2>
+          <br>
+          <p>Whenever commands accept keyboard input, it's likely they are really just drawing input from a mechanism called standard input.</p>
+          <br>
+          <p>By default, this is set to keyboard input.</p>
+          <br>
+          <p>The input to a command can be redirected to  a file by using the <code><</code> operator.</p>
+          <br>
+          <p><code>sort < file_list.txt</code></p>
+          <br>
+          <p class="fragment">Both input and output can be redirected at the same time.</p>
+          <br>
+          <p class="fragment"><code>sort < file_list.txt > sorted_file_list.txt</code></p>
+        </section>
+
+        <section>
+          <h2>Pipes</h2>
+          <br>
+          <p>The "|" character can be used to allow  commands to communicate during execution.</p>
+          <br>
+          <p>Pipes are placed between commands.</p>
+          <br>
+          <p>A pipe will cause the output of the left command to be used as the input of the right command.</p>
+          <br>
+          <p><code>ls -l | grep "myfile.txt" du | sort -nr</code></p>
+        </section>
+
+        <section>
+          <h2>grep</h2>
+          <br>
+          <p>The <code>grep</code> command outputs only the lines from a file that match a given pattern.</p>
+          <br>
+          <p>This is useful for doing text searches within a file.</p>
+          <br>
+          <p>The first argument is the pattern to match. The second, third, and so on are files to search within.</p>
+          <br>
+          <p><code>grep "ls" .bash_history</code></p>
+          <br>
+          <p class="fragment">If no file argument is given, it
+will expect input from the keyboard.</p>
+        </section>
+
+        <section>
+          <h2>Filters</h2>
+          <br>
+          <h4>Filters are commands whose behavior follows the following pattern:</h4>
+          <ol>
+            <li>Accept input from standard input.</li>
+            <li>Perform some operation on it.</li>
+            <li>Send the results to standard output.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Filters</h2>
+          <p>Check out the man pages for the following:</p>
+          <br>
+          <p><code>sort</code></p>
+          <p><code>uniq</code></p>
+          <p><code>grep</code></p>
+          <p><code>head</code></p>
+          <p><code>tail</code></p>
+          <p><code>fmt</code></p>
+          <p><code>pr</code></p>
+          <p><code>tr</code></p>
+          <p><code>sed</code></p>
+          <p><code>awk</code></p>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <br>
+          <p>Use the <code>ls</code> and <code>grep</code> commands to print out only the files in your home directory that contain the word "bash".</p>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <br>
+          <p><code>ls -a | grep bash</code></p>
+          <img src="img/exercise4-answer.png" alt="Exercise 4 Example">
+        </section>
+
+        <section>
+          <h2>Processes</h2>
+          <br>
+          <p>Whenever a command is executed, a new process is created.</p>
+        </section>
+
+        <section>
+          <h2>top</h2>
+          <br>
+          <p>The <code>top</code> command provides an up-to-date feed of information on the most active processes across the machine.</p>
+          <br>
+          <p>Useful for finding processes that are hogging the CPU.</p>
+        </section>
+
+        <section>
+          <h2>ps</h2>
+          <br>
+          <p>The <code>ps</code> utility displays all of your processes that have controlling terminals.</p>
+        </section>
+
+        <section>
+          <h2>ps</h2>
+          <img src="img/command-line-ps.png" alt="Command Line ps Processes">
+        </section>
+
+        <section>
+          <h2>Key Sequences</h2>
+          <br>
+          <p><code>Ctrl + Z</code>: Suspend the current process</p>
+          <br>
+          <p><code>Ctrl + C</code>: Terminate the current process</p>
+        </section>
+
+        <section>
+          <h2>Suspending a Process</h2>
+          <img src="img/command-line-suspend-process.png" alt="Command Line suspending a process">
+        </section>
+
+        <section>
+          <h2>bg & fg</h2>
+          <br>
+          <p>The <code>bg</code> and <code>fg</code> commands bring a suspended process back into a running state.</p>
+          <br>
+          <p><code>bg</code> runs it in a background process.</p>
+          <br>
+          <p><code>fg</code> runs it in the foreground of the current terminal.</p>
+          <br>
+          <p class="fragment">By default they target the most recently suspended process.</p>
+          <br>
+          <p class="fragment">The job number can be provided as an argument. (The number we saw when we suspended the process)</p>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <br>
+          <ol>
+            <li>Run the <code>top</code> command.</li>
+            <li>Suspend the process.</li>
+            <li>Bring the process back into the foreground.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <img src="img/exercise5-answer.png" alt="Exercise 5 Example">
+        </section>
+
+        <section>
+          <h2>kill</h2>
+          <br>
+          <p>The <code>kill</code> command terminates or sends a signal to a process.</p>
+          <br>
+          <p>It takes the process id (PID) as an argument.</p>
+          <br>
+          <p>You can find the PID using <code>top</code> or <code>ps</code>.</p>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <br>
+          <ol>
+            <li>Clear your terminal and run the <code>yes</code> command.</li>
+            <li>Use the <code>Ctrl+Z</code> key sequence to suspend the process.</li>
+            <li>Use the <code>bg</code> command to send the process to the background.</li>
+            <li>Notice the output is still happening even though the process is running in the background.</li>
+            <li>Open a new terminal window, locate the PID for the "yes" process and use it to kill the process.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Commands</h2>
+          <br>
+          <p>Typing <code>!</code> followed by the name of a command will repeat the last line that began with that command.</p>
+          <br>
+          <ul>
+            <li><code>ls -la ~ | grep "Desktop"</code></li>
+            <li><code>!ls</code></li>
+          </ul>
+          <br><br>
+          <p>In both instances, you should get the same output because the second line is simply repeating the first.</p>
+          <br>
+          <p>Typing <code>!!</code> by itself will re-run the last line entered.</p>
+        </section>
+
+        <section>
+          <h2>history</h2>
+          <br>
+          <p>The terminal keeps an ongoing log of all the commands you've run.</p>
+          <br>
+          <p>The <code>history</code> command prints the contents of the history file.</p>
+        </section>
+
+        <section>
+          <h2>history</h2>
+          <img src="img/command-line-history.png" alt="Command Line history">
+        </section>
+
+        <section>
+          <h2>history</h2>
+          <br>
+          <p>You can run a previous command using the number in the history.</p>
+          <br>
+          <p><code>!12</code></p>
+          <br>
+          <p class="fragment">Almost no one does this.</p>
+        </section>
+
+        <section>
+          <h2>Keyboard Shortcuts</h2>
+          <br>
+          <p><code>Ctrl + a</code> moves the cursor to the beginning of the command.</p>
+          <br>
+          <p><code>Ctrl + e</code> moves the cursor to the end of the command.</p>
+          <br>
+          <p>Use the <code>tab</code> key to auto complete file paths</p>
+          <br>
+          <p>Use the <code>up</code> arrow to cycle through the command history.</p>
+        </section>
+
+        <section>
+          <h2>Let's Develop It!</h2>
+          <br>
+          <ol>
+            <li>Use your <code>up</code> and <code>down</code> arrows to locate a past command with one or more arguments.</li>
+            <li>Move your cursor to the beginning of the line.</li>
+            <li>Move your cursor to the end of the line.</li>
+            <li>Change one of the arguments and run it.</li>
+            <li>Run the <code>date</code> command.</li>
+            <li>Re-run the command from step 4 using <code>!</code>.</li>
+            <li>Time the execution of your original command by running <code>time !!</code>.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Real World Examples</h2>
+          <br>
+          <p>Here are some examples of using the command line to accomplish tasks relating to development.</p>
+        </section>
+
+        <section>
+          <h2>Serve up a Directory</h2>
+          <br>
+          <p><code>python -m simpleHTTPServer</code></p>
+          <br>
+          <p>Don't forget: you can <code>Ctrl + C</code> to exit.</p>
+        </section>
+
+        <section>
+          <h2>Version Control</h2>
+          <br>
+          <p>Initialize the current directory as a Git repository.</p>
+          <p><code>git init .</code></p>
+          <br>
+          <p>Commit your file changes.</p>
+          <p><code>git commit -m "Hello Git!"</code></p>
+          <br>
+          <p>Include all changes next time we commit.</p>
+          <p><code>git add --all</code></p>
+          <br>
+          <p>View the commit history.</p>
+          <p><code>git log</code></p>
+          <br>
+          <p>Check out <a href="https://git-scm.com/book/en/v2" target="_blank">Pro Git</a> for a crash course on command-line git.</p>
+        </section>
+
+        <section>
+          <h2>Watching a Log File</h2>
+          <br>
+          <p><code>tail -f my_awesome.log</code></p>
+        </section>
+
+        <section>
+          <h2>More Resources</h2>
+          <br>
+          <p>For those wanting to go deeper down the rabbit hole, check out these resources.</p>
+          <br>
+          <ul>
+            <li>
+              <a href="https://natelandau.com/my-mac-osx-bash_profile/" target="_blank">Nathaniel Landau: My Mac OSX Bash Profile</a>
+            </li>
+            <li>
+              <a href="http://code.tutsplus.com/tutorials/how-to-customize-the-command-prompt--net-20586" target="_blank">tuts+: How to Customize the Command Prompt</a>
+            </li>
+            <li>
+              <a href="http://www.tldp.org/LDP/abs/html/index.html" target="_blank">Advanced Bash Scripting Guide</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Questions?</h2>
+        </section>
+
+
+      </div>
+      <footer>
         <div class="copyright">
-          Official class name here -- Chapter name here (if content modified from original) --
+          Intro to Command Line
+          <!-- -- Chapter name here (if content modified from original) -- -->
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
-		</div>
+    </div>
 
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
+'[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },

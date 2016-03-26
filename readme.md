@@ -1,49 +1,24 @@
-> Please read our slide creation guidelines in [the wiki](https://github.com/girldevelopit/gdi-slides-template/wiki). Then, delete this banner and add the specifics about your class below.
-
-# Add Your Course Title Here
+# Introduction to Command Line
 
 Slides and materials are hosted at [http://example.com/](http://example.com/).
 
+This is a modification of Introduction to Command Line, developed by [Jared StilWell](http://slides.com/jaredstilwell) for the Girl Develop It Austin chapter. The course is meant to be taught in a two-hour course. Each of the slides and practice files are customizable according to the needs of a given class or audience.
+
 ## Course description
 
-Use this space for a short description of your course. We recommend using the description from your meetup event.
-
-**Cost:** 
-
-**Dates:** 
-
-**Location:** 
-
-A limited number of scholarships are available for those with a financial hardship. To apply, contact us at...
-
-
-### Prerequisites:
-
-List any prerequisites for this class, including any previous classes or the equivalent self-study or real-world skills.
-
-You should have:
-
-(a) taken Intro or Intermediate HTML/CSS through Girl Develop It, or
-
-(b) built and managed websites on your own,
-
-**And also:**
-
-(a) taken intro to JavaScript through Girl Develop It, or
-
-(b) be familiar with syntax, arrays, conditionals, for and while loops, event handling, jQuery, AJAX requests, and handling JSON responses.
-
+The command line is a powerful yet oft avoided tool for beginning developers. We're here to show you there's nothing to be scared of! This course will cover basics of directory and file traversal, finding and searching for files and content, and using many of the powerful tools (grep/ack, man, ps, pipes, permissions, etc) that come along with most Unix Shells.
 
 ### Tech requirements:
 
  - Your laptop (Mac, PC, or Linux are all okay).
- - A modern web browser - either Chrome or Firefox with Firebug installed.
- - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
-
 
 ### Topics covered:
 
- - The topics you plan to cover
- - Written in list form
- - Here's another one
-
+- Command line "lingo".
+- Working in directories from the command line including finding the current folder you're in, listing all folders in your directory, making new folders and removing folders.
+- Working with files from the command line including printing the contents of a file, making new files and removing files.
+- Managing folder and file permissions.
+- Standard output and input of file contents including filtering content.
+- Command execution and processes including starting, stopping, and running background processes.
+- Accessing previously used commands in history.
+- Examples of real-world use of the command line and how it can be a powerful daily tool in development.
