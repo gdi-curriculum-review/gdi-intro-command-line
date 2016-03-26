@@ -1,6 +1,8 @@
 # Introduction to Command Line
 
-Slides and materials are hosted at [http://example.com/](http://example.com/). This is a modification of Introduction to Command Line, developed by Jared StilWell for the Girl Develop It Austin chapter. The course is meant to be taught in a two-hour course. Each of the slides and practice files are customizable according to the needs of a given class or audience.
+Slides and materials are hosted at [http://example.com/](http://example.com/).
+
+This is a modification of Introduction to Command Line, developed by [Jared StilWell](http://slides.com/jaredstilwell) for the Girl Develop It Austin chapter. The course is meant to be taught in a two-hour course. Each of the slides and practice files are customizable according to the needs of a given class or audience.
 
 ## Course description
 
@@ -12,11 +14,11 @@ The command line is a powerful yet oft avoided tool for beginning developers. We
 
 ### Topics covered:
 
-- Command line "lingo".  
-- Working in directories from the command line including finding the current folder you're in, listing all folders in your directory, making new folders and removing folders. 
-- Working with files from the command line including printing the contents of a file, making new files and removing files. 
-- Managing folder and file permissions. 
-- Standard output and input of file contents including filtering content. 
-- Command execution and processes including starting, stopping, and running background processes. 
-- Accessing previously used commands in history. 
+- Command line "lingo".
+- Working in directories from the command line including finding the current folder you're in, listing all folders in your directory, making new folders and removing folders.
+- Working with files from the command line including printing the contents of a file, making new files and removing files.
+- Managing folder and file permissions.
+- Standard output and input of file contents including filtering content.
+- Command execution and processes including starting, stopping, and running background processes.
+- Accessing previously used commands in history.
 - Examples of real-world use of the command line and how it can be a powerful daily tool in development.
