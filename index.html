@@ -572,13 +572,13 @@
           <br />
           <p>By default, this is set to keyboard input.</p>
           <br />
-          <p>The input to a command can be redirected to  a file by using the <code><</code> operator.</p>
+          <p>The input to a command can be redirected to  a file by using the <code>&lt;</code> operator.</p>
           <br />
-          <p><code>sort < file_list.txt</code></p>
+          <p><code>sort &lt; file_list.txt</code></p>
           <br />
           <p class="fragment">Both input and output can be redirected at the same time.</p>
           <br />
-          <p class="fragment"><code>sort < file_list.txt > sorted_file_list.txt</code></p>
+          <p class="fragment"><code>sort &lt; file_list.txt &gt; sorted_file_list.txt</code></p>
         </section>
 
         <section>
@@ -863,7 +863,7 @@ will expect input from the keyboard.</p>
       <footer>
         <div class="copyright">
           Intro to Command Line
-          <!-- -- Chapter name here (if content modified from original) -- -->
+          <!-- Chapter name here (if content modified from original) -->
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
@@ -871,37 +871,25 @@ will expect input from the keyboard.</p>
 
 
     <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
+		<script src="js/reveal.min.js"></script>
 
-    <script>
+		<script>
 
-      // Full list of configuration options available here:
-      // https://github.com/hakimel/reveal.js#configuration
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
 
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true },
-                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
-        ]
-      });
-
-    </script>
-
-  </body>
-</html>
-'[data-markdown]' ); } },
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
