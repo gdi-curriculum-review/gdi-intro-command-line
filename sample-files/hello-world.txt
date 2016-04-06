@@ -1,0 +1,2 @@
+Hello! Welcome to our sample files. You can use these files to 
+practice using the command line.
